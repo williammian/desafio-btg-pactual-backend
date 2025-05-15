@@ -176,20 +176,7 @@ O escopo atual do código analisado foca principalmente no processamento e consu
 
 Até o momento da análise, não foram encontrados arquivos `Dockerfile` ou `docker-compose.yml` na estrutura do projeto. Se estes arquivos forem adicionados posteriormente, as instruções para build e execução da aplicação via contêineres Docker deverão ser incluídas nesta seção.
 
-## Contribuição
-
-Contribuições para o projeto são bem-vindas. Para contribuir, por favor, siga os passos abaixo:
-
-1.  Faça um fork do repositório.
-2.  Crie uma nova branch para a sua feature ou correção (`git checkout -b minha-feature`).
-3.  Faça as suas alterações e commit (`git commit -am 'Adiciona nova feature'`).
-4.  Envie para a sua branch (`git push origin minha-feature`).
-5.  Crie um novo Pull Request.
-
 ## Licença
 
-Este projeto não especifica uma licença em seus arquivos. Por favor, consulte o proprietário do repositório para mais informações sobre os termos de uso e distribuição.
-
----
-*Este README foi gerado com base na análise do código-fonte disponível em [https://github.com/williammian/desafio-btg-pactual-backend](https://github.com/williammian/desafio-btg-pactual-backend) em 15 de Maio de 2025.*
+Este projeto está licenciado sob a licença MIT.
 
