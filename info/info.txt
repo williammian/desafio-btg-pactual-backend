@@ -1,0 +1,79 @@
+Client MongoDB
+
+MongoDB Compass
+
+https://www.mongodb.com/try/download/compass
+
+User: admin
+Password: 123
+
+--------------------
+
+Client RabbitMQ
+
+http://localhost:15672
+
+User: guest
+Password: guest
+
+--------------------
+
+Publicando mensagem na fila do RabbitMQ
+
+selecionando a fila btg-pactual-order-created
+
+em Publish message
+
+em Payload
+
+colocar o json da mensagem
+
+{
+       "codigoPedido": 1001,
+       "codigoCliente":1,
+       "itens": [
+           {
+               "produto": "lápis",
+               "quantidade": 100,
+               "preco": 1.10
+           },
+           {
+               "produto": "caderno",
+               "quantidade": 10,
+               "preco": 1.00
+           }
+       ]
+}
+
+botão Publish message
+
+---------------------------------------
+
+Testando endpoint API
+
+GET
+
+http://localhost:8080/customers/1/orders
+
+resposta 200 ok
+
+{
+	"summary": {
+		"totalOnOrders": 120.00
+	},
+	"data": [
+		{
+			"orderId": 1001,
+			"customerId": 1,
+			"total": 120.00
+		}
+	],
+	"pagination": {
+		"page": 0,
+		"pageSize": 10,
+		"totalElements": 1,
+		"totalPages": 1
+	}
+}
+
+---------------------------------------
